@@ -159,9 +159,14 @@ body {
     /* flex-wrap: wrap;
     align-items: center; */
   }
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
-/* ----------Main---------- */
+/* ----------Preview---------- */
 .preview__container {
   display: flex;
   align-items: center;
@@ -217,6 +222,28 @@ body {
   gap: 15px;
 }
 
+@media (max-width: 350px) {
+  .preview__container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .preview__image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .preview__info {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .info-text {
+    display: flex;
+    position: relative;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+}
+
 /* ------Latest episod------- */
 
 .episodes__title {
@@ -247,12 +274,12 @@ body {
   border-radius: 32px;
   align-items: center;
   margin-bottom: 160px;
+  width: 100%;
 }
 .episodes__episode:not(:last-child) {
   margin-bottom: 60px;
 }
 .episode__image {
-  width: 50%;
   display: flex;
   margin-right: 53px;
 }
@@ -277,7 +304,9 @@ body {
   width: 73px;
   height: 27px;
 }
-
+.episode {
+  padding: 20px 0;
+}
 .tips {
   width: 136px;
 }
@@ -324,6 +353,57 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #fff;
+}
+
+@media (max-width: 350px) {
+  .episodes__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-bottom: 80px;
+  }
+  .episodes-title__text {
+    margin-bottom: 40px;
+  }
+  .episodes-title__text {
+    margin-bottom: 40px;
+  }
+  .episode__image {
+    position: relative;
+    justify-content: start;
+    align-items: flex-start;
+    display: flex;
+    margin-right: 5px;
+  }
+  .episode__image img {
+    align-items: flex-start;
+    justify-content: start;
+    margin: 40px 57px 10px 40px;
+    width: 200px;
+  }
+  .episode-info__appointment {
+    margin-bottom: 20px;
+  }
+  .episode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    /* flex-wrap: wrap; */
+    padding: 20px 0;
+  }
+  .text-info {
+    width: 400px;
+  }
+  .episodes__episode {
+    display: flex;
+    background: #000;
+    border-radius: 32px;
+    align-items: center;
+    margin-bottom: 160px;
+    width: 600px;
+  }
 }
 
 /* -------About------ */

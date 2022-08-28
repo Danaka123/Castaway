@@ -1,2 +1,2 @@
 # Castaway
-(Castaway)[https://danaka123.github.io/Castaway/]
+[Castaway](https://danaka123.github.io/Castaway/)

@@ -222,7 +222,7 @@ body {
   gap: 15px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 750px) {
   .preview__container {
     flex-wrap: wrap;
     align-items: center;
@@ -355,7 +355,12 @@ body {
   color: #fff;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 700px) {
+  .episodes-info {
+    width: 650px;
+    margin: 0 auto;
+  }
+
   .episodes__title {
     display: flex;
     flex-direction: column;
@@ -370,44 +375,35 @@ body {
     margin-bottom: 40px;
   }
   .episode__image {
-    position: relative;
-    justify-content: start;
-    align-items: flex-start;
-    display: flex;
-    margin-right: 5px;
+    margin: 0 auto;
   }
-  .episode__image img {
-    align-items: flex-start;
-    justify-content: start;
-    margin: 40px 57px 10px 40px;
-    width: 200px;
-  }
+
   .episode-info__appointment {
     margin-bottom: 20px;
   }
   .episode {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     /* flex-wrap: wrap; */
-    padding: 20px 0;
+    padding: 20px auto;
   }
   .text-info {
     width: 400px;
   }
-  .episodes__episode {
-    display: flex;
-    background: #000;
-    border-radius: 32px;
-    align-items: center;
-    margin-bottom: 160px;
-    width: 600px;
+  .text-info__title {
+    margin: 0 auto;
+  }
+  .episod-info__button {
+    margin: 0 auto;
   }
 }
 
 /* -------About------ */
-.about {
+.about__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -491,7 +487,22 @@ body {
   line-height: 33px;
   color: rgba(255, 255, 255, 0.7);
 }
-/* --------------------- */
+@media (max-width: 700px) {
+  .about__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 201px;
+  }
+  .about__image {
+    margin-bottom: 40px;
+  }
+  .info-about-pointer {
+    display: none;
+  }
+}
+/* ----------Subscribe----------- */
 .email-newsletter {
   display: flex;
   justify-content: space-around;
@@ -556,7 +567,19 @@ body {
   line-height: 29px;
   color: rgba(255, 255, 255, 0.7);
 }
-
+@media (max-width: 700px) {
+  .email-newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .register {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
 /* --------Mark------- */
 
 .mark {
@@ -601,10 +624,28 @@ body {
   margin-bottom: 51px;
   color: rgba(255, 255, 255, 0.7);
 }
+@media (max-width: 650px) {
+  .mark {
+    margin-bottom: 200px;
+    padding: 10px 0;
+  }
+  .mark-items {
+    grid-template-columns: repeat(2, 50%);
+    padding: 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  .mark-items {
+    grid-template-columns: repeat(2, 50%);
+    margin: 0 auto;
+  }
+  .mark-items__item {
+    margin: 0 auto;
+  }
+}
 
 /* -----Footer----- */
-.fotter {
-  /* height: 238px; */
+.footer__container {
   display: flex;
   gap: 16px;
   margin-bottom: 30px;
@@ -668,4 +709,6 @@ body {
 .footer-platform__link:hover,
 .logo:hover {
   color: #118da8;
+}
+@media (max-width: 700px) {
 }
